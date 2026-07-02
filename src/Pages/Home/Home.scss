@@ -1,0 +1,32 @@
+.home-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column;
+  background: transparent;
+
+  .wrapper {
+    max-width: 1440px;
+    width: min(80%, 1180px);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1044px) {
+  .home-container {
+    .wrapper {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .home-container {
+    .wrapper {
+      width: 100%;
+    }
+  }
+}

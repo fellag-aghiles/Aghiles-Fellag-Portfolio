@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-main: #05050b;
+  --bg-deep: #090916;
+  --bg-panel: rgba(14, 14, 27, 0.78);
+  --bg-panel-strong: rgba(19, 18, 35, 0.94);
+  --border-soft: rgba(255, 255, 255, 0.12);
+  --border-purple: rgba(168, 85, 247, 0.46);
+  --text-main: #f8fbff;
+  --text-muted: #a8b0c3;
+  --text-soft: #d8ddf0;
+  --accent-purple: #a855f7;
+  --accent-purple-2: #c084fc;
+  --accent-blue: #38bdf8;
+  --accent-red: #fb4d5d;
+  --radius-lg: 26px;
+  --radius-md: 18px;
+  --shadow-purple: 0 24px 80px rgba(91, 33, 182, 0.28);
+  --shadow-blue: 0 18px 50px rgba(56, 189, 248, 0.13);
+  --glass-blur: blur(18px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg-main);
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  overflow-x: hidden;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 18% 8%, rgba(168, 85, 247, 0.28), transparent 32%),
+    radial-gradient(circle at 82% 22%, rgba(56, 189, 248, 0.18), transparent 28%),
+    radial-gradient(circle at 68% 82%, rgba(251, 77, 93, 0.12), transparent 30%),
+    linear-gradient(135deg, #020207 0%, #070714 48%, #020207 100%);
+  min-height: 100vh;
+}
+
+body::selection {
+  background: rgba(168, 85, 247, 0.45);
+  color: white;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070714;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--accent-purple), var(--accent-blue));
+  border-radius: 999px;
+}
+
+[data-aos] {
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

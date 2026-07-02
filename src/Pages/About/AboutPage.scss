@@ -1,0 +1,111 @@
+.about-page-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: transparent;
+  position: relative;
+  flex-direction: column;
+
+  .wrapper {
+    max-width: 1440px;
+    width: min(80%, 1180px);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+
+    .skills-table {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 60px 0 90px;
+      margin-bottom: 30px;
+
+      h3 {
+        font-size: clamp(24px, 3vw, 32px);
+        font-weight: 600;
+        color: var(--text-main);
+
+        span {
+          color: var(--accent-purple);
+          margin-right: 5px;
+        }
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 18px;
+
+        .item {
+          border: 1px solid var(--border-soft);
+          border-radius: var(--radius-md);
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.025));
+          backdrop-filter: var(--glass-blur);
+          overflow: hidden;
+          box-shadow: 0 16px 50px rgba(0, 0, 0, 0.22);
+          transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+
+          &:hover {
+            transform: translateY(-8px);
+            border-color: rgba(168, 85, 247, 0.58);
+            box-shadow: var(--shadow-purple);
+          }
+
+          h4 {
+            padding: 14px 16px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            text-transform: capitalize;
+            border-bottom: 1px solid var(--border-soft);
+            background: rgba(168, 85, 247, 0.08);
+          }
+
+          p {
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--text-muted);
+            padding: 16px;
+            line-height: 32px;
+
+            .important {
+              color: var(--accent-blue);
+
+              span {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1044px) {
+  .about-page-container .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 786px) {
+  .about-page-container .wrapper {
+    width: 100%;
+
+    .skills-table {
+      padding: 45px 20px 70px;
+    }
+  }
+}
+
+.about-page-container .wrapper .skills-table {
+  .about-note {
+    color: var(--text-muted);
+    line-height: 1.8;
+    max-width: 860px;
+    padding: 20px 24px;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.045);
+  }
+}

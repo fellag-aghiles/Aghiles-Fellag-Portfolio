@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Aghiles-Fellag-Portfolio/static/css/main.27c103b8.css",
+    "main.js": "/Aghiles-Fellag-Portfolio/static/js/main.783378c2.js",
+    "static/media/me.jpg": "/Aghiles-Fellag-Portfolio/static/media/me.9cd96ce0901e0c6f2195.jpg",
+    "index.html": "/Aghiles-Fellag-Portfolio/index.html",
+    "main.27c103b8.css.map": "/Aghiles-Fellag-Portfolio/static/css/main.27c103b8.css.map",
+    "main.783378c2.js.map": "/Aghiles-Fellag-Portfolio/static/js/main.783378c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27c103b8.css",
+    "static/js/main.783378c2.js"
+  ]
+}

@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Aghiles-Fellag-Portfolio/static/css/main.27c103b8.css",
-    "main.js": "/Aghiles-Fellag-Portfolio/static/js/main.783378c2.js",
-    "static/media/me.jpg": "/Aghiles-Fellag-Portfolio/static/media/me.9cd96ce0901e0c6f2195.jpg",
-    "index.html": "/Aghiles-Fellag-Portfolio/index.html",
-    "main.27c103b8.css.map": "/Aghiles-Fellag-Portfolio/static/css/main.27c103b8.css.map",
-    "main.783378c2.js.map": "/Aghiles-Fellag-Portfolio/static/js/main.783378c2.js.map"
+    "main.css": "/static/css/main.27c103b8.css",
+    "main.js": "/static/js/main.2c95af43.js",
+    "static/media/me.jpg": "/static/media/me.9cd96ce0901e0c6f2195.jpg",
+    "index.html": "/index.html",
+    "main.27c103b8.css.map": "/static/css/main.27c103b8.css.map",
+    "main.2c95af43.js.map": "/static/js/main.2c95af43.js.map"
   },
   "entrypoints": [
     "static/css/main.27c103b8.css",
-    "static/js/main.783378c2.js"
+    "static/js/main.2c95af43.js"
   ]
 }
